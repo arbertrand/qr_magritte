@@ -13,5 +13,9 @@ for mask in range(8):
 
     # Datei speichern mit Masken-Nummer im Namen
     filename = f'result/qr_mask_{mask}.png'
-    qr.save(filename, scale=1)
+    qr.save(filename, scale=10)
     print(f'Gespeichert: {filename}')
+
+
+import shutil
+shutil.copyfile(f'result/qr_mask_4.png', f'./qr_magritte.png')
