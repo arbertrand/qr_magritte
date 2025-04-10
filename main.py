@@ -13,7 +13,7 @@ for mask in range(8):
 
     # Datei speichern mit Masken-Nummer im Namen
     filename = f'result/qr_mask_{mask}.png'
-    qr.save(filename, scale=10)
+    qr.save(filename, scale=30)
     print(f'Gespeichert: {filename}')
 
 
